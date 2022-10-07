@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Quote Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center min-h-[100vh] bg-black py-[20px] gap-[20px]"
+  >
+    <h1 class="text-[200%] font-semibold italic text-white text-center">
+      Random Quote Generator By Aman Verma 👑
+    </h1>
+    <div
+      class="main-container text-center justify-center items-center flex flex-col gap-[30px] h-[100%] lg:w-[50%] rounded py-[20px] px-[30px] bg-white mx-[20px]"
+    >
+      <h1 id="qoute" class="text-center text-[130%] font-semibold italic"></h1>
+      <p id="author" class="text-center text-[150%] font-semibold"></p>
+      <button
+        id="btn"
+        class="bg-black text-white rounded-lg p-[10px] lg:w-[30%] w-[100%]"
+      >
+        Get Quote
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
